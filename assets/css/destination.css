@@ -111,8 +111,13 @@ body {
     }
   }
 
-  img {
+  .img-container {
     margin: auto;
+    width: 170px;
+    height: 170px;
+    background-image: url('/assets/destination/image-moon.png');
+    background-size: cover;
+    background-position: bottom;
     margin-bottom: 26px;
   }
 

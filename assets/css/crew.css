@@ -110,10 +110,13 @@ body {
       color: #ffffff40;
     }
   }
-
-  img {
-    margin: auto;
+  
+  .img-container{
+    width: 327px;
+    height: 223px;
     margin-bottom: 32px;
+    background-image: url('/assets/crew/crow.svg');
+    background-repeat: no-repeat;
   }
 
   .tabs {
@@ -126,23 +129,23 @@ body {
       list-style: none;
 
       a {
+        display: block;
         font-weight: 500;
         font-size: 9.2px;
         text-decoration: none;
         color: #ffffff2c;
         position: relative;
+        margin-bottom: 32px !important;
       }
     }
   }
 
   .active {
-    display: block;
     color: var(--white) !important;
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-bottom: 32px !important;
   }
 
   .active::before {
@@ -152,7 +155,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-bottom: 32px !important;
   }
 
   .role {
@@ -182,7 +184,7 @@ body {
     line-height: 25px;
     text-align: center;    
     color: var(--light);
-    margin-bottom: 104px;
+    margin-bottom: 80px;
   }
 
 }
