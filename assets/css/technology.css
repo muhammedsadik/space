@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --white: #fff;
+  --light: #D0D6F9;
+  --dark: #0B0D17;
+}
+
+body {
+  max-width: 375px;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  margin: auto;
+  position: relative;
+}
+
+.root {
+  background-image: url('/assets/technology/bg-image-mabile.jpg');
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.container {
+  padding-bottom: 81px;
+
+  h3 {
+    font-family: Barlow Condensed;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 32px;
+
+
+    span {
+      font-family: Barlow Condensed;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19.2px;
+      letter-spacing: 2.7px;
+      margin-right: 16px;
+      color: #ffffff40;
+    }
+  }
+
+  .img-container {
+    width: 375px;
+    height: 170px;
+    background-image: url('/assets/technology/image-launch-vehicle-portrait.jpg');
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 34px;
+  }
+
+  .content-info {
+    padding-inline: 24px;
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      padding: 0;
+
+      li {
+        list-style: none;
+
+        a {
+          display: block;
+          padding: 11px 16px;
+          font-family: Bellefair;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 18.34px;
+          letter-spacing: 1px;
+          text-align: center;
+          text-decoration: none;
+          color: var(--white);
+          border: 1px solid #ffffff40;
+          border-radius: 50%;
+          cursor: pointer;
+          margin-bottom: 26px;
+        }
+      }
+    }
+
+    .active {
+      color: var(--dark) !important;
+      background-color: var(--white);
+    }
+
+
+    .role {
+      font-family: Barlow Condensed;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16.8px;
+      letter-spacing: 2.36px;
+      text-align: center;
+      color: var(--light);
+      margin-bottom: 9px;
+    }
+
+    .name {
+      font-family: Bellefair;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 27.5px;
+      text-align: center;      
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+
+    .bio {
+      font-family: Barlow;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+       text-align: center;      
+      color: var(--light);
+    }
+  }
+}
